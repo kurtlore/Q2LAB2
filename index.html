@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>I Remember It - Your #1 Music News</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="cssfonts/stylesheet" href="stylesheet.css" type="text/css" charset="utf-8"/>
+        
+        <style>
+             .container-fluid{
+                padding-left: 0px; 
+                padding-right: 0px; 
+            }
+            
+            #header1{
+                height:65vh; 
+            }
+            
+            #headerimg{
+                object-fit: cover; 
+                width: 100%; 
+                height:100%; 
+            }
+            
+            #header1 span{
+                position:absolute; 
+            }
+            
+            body{
+                background-color: #080704; 
+                color:#FFFFFF; 
+            }
+            
+            #nav2{
+                left:66.64%; 
+                top:5%; 
+                width:33.33%;
+            }
+            
+            #nav1{
+                top:5%; 
+                width:33.33%; 
+            }
+            
+            #nav1 a{
+                color:white;
+            }
+            
+            #nav2 a{
+               color:white;  
+            }
+            
+            #logo{
+                left:33.3%;
+                top:4%; 
+                width:33.34%; 
+            }
+            
+            .navigation{
+                font-family: 'Raleway', sans-serif; 
+                font-size:20px;
+            }
+            
+            #logo img{
+                object-fit:contain;
+                max-width: 100%;
+                height:auto;  
+            }
+            
+            @font-face {
+                font-family: 'new_thin_roman_jnlregular';
+                src: url('newthinromanjnl-webfont.woff2') format('woff2'),
+                     url('newthinromanjnl-webfont.woff') format('woff');
+                    font-weight: normal;
+                    font-style: normal;
+
+}
+
+            @font-face {
+                font-family: 'century_expandeditalic';
+                src: url('font2-webfont.woff2') format('woff2'),
+                     url('font2-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+            
+             @font-face {
+                font-family: 'century_expandeditalic', serif;
+                src: url(../media/font/font2.otf);
+            }
+            
+            #headlinecont{
+                position: relative;
+                height:65vh;
+               
+            }
+            
+            #headline{
+                position: absolute; 
+                letter-spacing: 1.4px;
+                font-family: 'new_thin_roman_jnlregular', serif; 
+                font-size:65px; 
+                display:flex;
+                max-width: 100%; 
+                max-height: 30%; 
+                top:75%; 
+                transform: translateY(-50%); 
+            }
+            
+            .headlinearticle{
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            
+            .byline{
+                font-family: 'century_expandeditalic', serif; 
+                font-style:italic; 
+                font-size: 20px; 
+                position: relative; 
+                top:1vw; 
+            }
+    
+            .hdarticle{
+               column-count: 3; 
+               font-family: 'Source Serif Pro', serif;
+               column-rule: 2px solid #FFFFFF;
+               column-gap: 3%; 
+               text-align: justify; 
+            
+            }
+            @media all and (max-width:1024px){
+                #headline{
+                    top:70%; 
+                }
+            }
+            
+            
+            @media all and (max-width:891px){
+                #header1{
+                height:100vh; 
+            }
+                
+                #headline {
+                   top:55%; 
+                   transform: translateY(-50%); 
+                     
+                }
+                
+                .hdarticle{
+                    column-count: 2; 
+                }
+                
+                #nav1{
+                    width:25%;
+                }
+                
+                #nav2{
+                    width:25%;
+                    left:75%;
+                }
+                
+                #logo{
+                    width:40%;
+                    left:30%;
+                }
+                
+                .byline{
+                    text-align: center;
+                }
+                
+                .line{
+                    border-left: 0px; 
+                }
+            }
+                  
+            @media (max-width:774px){
+                .hdarticle{
+                    column-count: 1; 
+                }
+            }
+            
+            @media (max-width:566px){
+                #headline {
+                    font-size:60px;
+                    top:60%; 
+                    }
+            
+                #logo{
+                    width:50%;
+                    left:25%;
+                }
+                
+                .navigation{
+                    font-size: 15px;
+                }   
+            }
+            
+            @media (max-width:524px){
+                #headline {
+                    top:65%; 
+                    font-size:55px;
+                }
+            }
+            
+             @media (max-width:483px){
+                #headline {
+                    top:47% 
+                }
+            }
+            
+            @media (max-width:425px){
+                #headline {
+                    font-size:7.7vh;
+                }
+            }
+            
+            @media (max-width:400px){
+                #headline {
+                    top:50%; 
+                    font-size:7vh;
+                    
+                }
+            }
+            
+           
+            
+            #headline a{
+                color:white; 
+            }
+            
+            #headline a:hover{
+                text-decoration: none; 
+            }
+            
+            .mntitle{
+                font-family: 'new_thin_roman_jnlregular', serif;
+                font-size: 40px; 
+           
+            }
+            
+            
+            #mitski{
+                width:50%; 
+                float: left; 
+                text-align: justify; 
+                 border-right: 2px solid #FFFFFF;
+                padding-right:2.5%;
+                padding-left:1%; 
+                
+            }
+            
+            #mitski img{
+               width:383px;
+                height:498px; 
+                float: left; 
+                shape-outside: url('mitski.png'); 
+                shape-margin: 10px; 
+                object-fit: contain; 
+            }
+            
+            .mitskiarticle{
+                color: white; 
+                font-family: 'Source Serif Pro', serif;
+
+            }
+            
+             .mitskiarticle:hover{
+                color: white;
+                text-decoration: none; 
+            }
+            
+             #phoebe{
+                width:47.5%; 
+                float: right; 
+                text-align: justify; 
+                padding-right:1%; 
+            }
+            
+            #phoebe img{
+               width:383px;
+               height:498px; 
+               float: right; 
+               shape-outside: url('phoebe.png'); 
+               shape-margin: 10px; object-fit: contain; 
+            }
+            
+            .phoebearticle{
+                color: white; 
+                font-family: 'Source Serif Pro', serif;
+
+            }
+            
+             .phoebearticle:hover{
+                color: white;
+                text-decoration: none; 
+            }
+            
+             hr {
+                position: absolute; 
+            }
+            
+            @media all and (max-width:891px){
+                #mitski{
+                    width:100%;
+                    padding-right: 1%; 
+                     padding-bottom: 2%; 
+                    border-right: 0px; 
+                    border-bottom: 2px solid #FFFFFF;
+                }
+            
+                #phoebe{
+                    width:100%; 
+                    padding-left: 1%;
+                    padding-top:2%; 
+
+                }
+                
+            }
+            
+            #quicknews{
+            
+            }
+            
+            .qncont{
+                background-color:black; 
+                object-fit: cover; 
+                display: block; 
+                 width: 100%; 
+                height:100%;  
+              
+            }
+            
+            .qncont img{
+                object-fit: cover; 
+                width: 100%; 
+                height:15vh;  
+            } 
+            
+            #help{
+                max-height: 100%; 
+            }
+            
+            .qnarticle{
+                background-image: url(media/photos/quicknews/qnbg.png); 
+                background-color: white; 
+                color:black; 
+                display: flex; 
+                flex-direction: row; 
+                flex-wrap: wrap; 
+            }
+            
+            .qnbox{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width:33.33%;
+                text-align: center; 
+            }
+            
+            .qnbox p{
+                color:black;
+                font-family: 'new_thin_roman_jnlregular', serif;
+                font-size:  26px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            
+            .qnbox img{
+                width:100%;
+                height:auto;
+            }
+            
+            @media (max-width:986px){
+                .qnbox{
+                display:block;  
+                }
+            }
+                
+            @media (max-width:711px){
+                .qnbox{
+                width:100%; 
+                align-items: center;
+                }
+            }  
+            
+            #footer{
+                background-color: beige; 
+                font-family: 'Raleway', sans-serif;
+                color:white;
+                height:20vh; 
+                width:100%;
+                position: relative;
+                background-color:#080704; 
+                }
+                
+            #contactus{
+                text-align: center; 
+                width:33.33%; 
+                position: absolute;
+                font-size: 20px; 
+                top:50%; 
+                transform: translateY(-50%);
+            }
+            
+            #locations{
+                left:66.64%; 
+                width:33.33%; 
+                position: absolute;
+                text-align: center; 
+                font-size: 20px;
+                top:50%; 
+                transform: translateY(-50%);
+            }
+            
+            #footerimg{
+                left:33.33%; 
+                width:33.34%; 
+                position: absolute;
+                top:50%; 
+                transform: translateY(-50%);
+                
+            }
+            
+            #footerimg img{
+                max-width:100%; 
+                height: auto; 
+                object-fit:contain;
+            }
+            
+            
+            
+            @media (max-width:713px){
+                #contactus{
+                    font-size: 15px;
+                }
+                
+                 #locations{
+                    font-size: 15px;
+                }
+            }
+            
+            @media (max-width:375px){
+                #mitski img{
+                    shape-outside:none; 
+                    shape-margin:none; 
+                }
+                
+                #phoebe img{
+                    shape-outside:none; 
+                    shape-margin:none; 
+                }
+            }
+            
+            @media (max-height:670px){
+                #headline{
+                   top:50%;  
+                    
+                }
+            }
+            
+            @media (min-width:1441px){
+                #headline{
+                    top:50%;
+                   font-size: 7vw; 
+                    
+                }
+            }
+            
+            
+            
+          
+            
+            
+        </style>
+    </head>
+      
+    
+     <body>
+        <header>
+            <div id="header1" class="container-fluid col-sm-12">
+                <span id="nav1" class="container navigation text-center">
+                    <a href="#">Latest News</a>
+                </span>
+                
+                <span id="logo" class="container navigation">
+                    <img src="media/photos/logo.png" height="480" alt="I Remember It — Your #1 Music News">
+                </span>
+                
+                <span id="nav2" class="container navigation text-center">
+                    <a href="#">Reviews and Recs</a>
+                </span>
+                
+                <img id="headerimg" src="media/photos/header.png" alt="Taylor Swift releases Long Awaited All Too Well Short Film">
+               <div class="headlinecont">
+                    <div id="headline">
+                        <a href="https://www.vogue.com/article/taylor-swift-all-too-well-music-video" class="text-center">Taylor Swift releases Long Awaited All Too Well Short Film</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+         
+        <div class="headlinearticle">
+            <p class="byline">By: Sarah Spellings</p>
+            <p class="hdarticle">For a brief, brief moment in time, “All Too Well,” track five on Taylor Swift’s fourth studio album, Red, was an underdog. The heart-wrenching breakup ballad initially played second fiddle to radio bangers like “We Are Never Getting Back Together” and “22.” Soon enough, however, the song would be heralded as a Swiftian standout, going on to be listed as one of Rolling Stone’s best songs of all time. “All Too Well” has become a kind of autumnal anthem—and still, nearly a decade later, fans haven’t had enough.
+            <br><br>
+            Today Swift gave fans what they never knew they needed: An expanded, rereleased Red, including “All Too Well (Taylor’s Version),” the standard, five-minute long track; “All Too Well (10 Minute Version) (Taylor’s Version)”; as well as her directorial debut, a 15-minute-long film called All Too Well. 
+            <br><br>
+            “You chose this song,” Swift told the crowd at the film’s premiere at the AMC theater on Manhattan’s Upper West Side. “A record label didn’t pick this song as a single; we never made a video for it. This was a song that started out as a song on the album, just a simple track five,” she said, as the crowd of Swifties swelled with laughter. “You went and turned it into what it is now.” Swift later added that she thought it would be “fun” to make the song into a “cinematic universe.”</p>
+        </div>
+         
+        <div>
+         <div id="morenews">
+             <div class="title">
+                 <p class="text-center mntitle">Mitski and Phoebe Release new singles this holiday season</p>
+             </div>
+             
+             <div id="mitski">
+                 <img src="mitski.png" alt="Mitski" class="img-fluid"> 
+                 <a href="https://www.pastemagazine.com/music/mitski/mitski-new-song-heat-lightning/" class=mitskiarticle>When Mitski’s sixth album arrives on Feb. 4, 2022, it will break the longest silence of the acclaimed singer/songwriter’s career. Needless to say, Laurel Hell is one of our most-anticipated releases of the impending new year, and today (Dec. 7) brings our latest preview of the album: “Heat Lightning,” its third single after “Working for the Knife” and “The Only Heartbreaker,” is accompanied by an animated lyric video created by Alex Moy.
+                 <br> <br>
+                 Mitski says in a statement that, for her new album, she “needed songs that could help me forgive both others and myself … I needed to create this space mostly for myself where I sat in that gray area.” “Heat Lightning” makes its home in that space, a subdued, contemplative track that brings Mitski’s bittersweet rumination to the forefront. The singer both describes insomnia in her lyrics and evokes it with her instrumentation: Laurel Hell producer Patrick Hyland contributes sparse guitars, synths and percussion, balancing an insistent RNB groove with downcast brooding. It’s a serene union of intimate human emotion and natural phenomena, the kind of music that makes you appreciate the very ground beneath your feet.
+                 </a> 
+                  
+             </div>
+           
+            
+            <div id="phoebe">
+                <img src="phoebe.png" alt="Phoebe Bridgers" class="img-fluid">
+                <a href="https://floodmagazine.com/96852/listen-phoebe-bridgers-day-after-tomorrow/" class="phoebearticle">
+                Phoebe Bridgers‘ music feels like it’s ripped straight from her head, the candid and well-thought lyrics tinged with a bit of blood from the pain she’s been reconciling. It’s also her heartfelt delivery that makes her one of the most recognizable rock acts—not to mention her unmistakable skeleton uniform. It follows Bridgers’ tradition of releasing a holiday song where the profits go to charity—this year, the proceeds for her Waits cover go to the International Institute of Los Angeles’ Local Integration and Family Empowerment Division.
+                <br><br>
+                “Day After Tomorrow” takes the perspective of a soldier away at war who’s coming back home, wrestling with the acceptance of killing other people for a national agenda. “I still don’t know how I’m supposed to feel / About all the blood that’s been spilled with God on his throne,” she sings quietly. “You can’t deny, the other side don’t want to die anymore than we do / What I’m trying to say is, don’t they pray to the same God that we do?
+                </a>
+            </div>
+        </div>
+    </div>
+         
+         <div id="quicknews">
+             <div class="qncont">
+                 <img src="media/photos/quicknews/qntop.png" alt="Quick news top image"> 
+             </div>
+             
+             <div class="qnarticle">
+                 <div class="qnbox">
+                    <img src="media/photos/quicknews/qnbanners/twice.png" alt="Twice">
+                     <p>Twice releases third studio album, Formula of Love: O+T=&lt;3</p>
+                 </div>
+                 <div class="qnbox">
+                    <img src="media/photos/quicknews/qnbanners/billie.png" alt="Twice">
+                     <p>Billie Eilish drops music video for "Male Fantasy"</p>
+                 </div>
+                 <div class="qnbox">
+                    <img src="media/photos/quicknews/qnbanners/lana.png" alt="Twice">
+                     <p>Lana Del Ray releases eigth studio album, Blue Banisters</p>
+                 </div>
+             </div>
+         </div>
+        
+         <div id="footer" class="containerfluid">
+             <span id="contactus">
+                 <a>Contact us:<br>+329497399234<br>irememberit@music.co</a>
+             </span>
+             
+             <span id="footerimg">
+                 <img src="media/photos/footer/footer.png" alt="I Remember It — Copyright 2021">
+             </span>
+             
+             <span id="locations">
+                 <a>Locations<br>+#1 Street Drive, City<br>Address, Statial Providence</a>
+             </span>
+         </div>
+    </body>
+</html>
